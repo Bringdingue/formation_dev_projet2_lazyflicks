@@ -1,0 +1,193 @@
+.card {
+  border: 3px solid #e09e50;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
+  background-color: rgba(30, 30, 30, 0.321);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  min-width: 20rem;
+  max-height: 30rem;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.genre {
+  color: #e09e50;
+  margin: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 15vw;
+}
+
+select {
+  font-size: 0.9rem;
+  max-width: 40vw;
+  border-style: none;
+  cursor: pointer;
+}
+
+label {
+  color: white;
+}
+.thriller {
+  margin: 0;
+  margin-left: 2rem;
+  border: 3px solid white;
+}
+.type {
+  color: #e09e50;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 15vw;
+}
+.series-movies {
+  margin: 0;
+}
+.series {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  color: white;
+  font-size: larger;
+}
+
+.movies {
+  color: white;
+  font-size: larger;
+}
+
+.rated {
+  color: #e09e50;
+  display: flex;
+  align-items: center;
+  height: 13vw;
+  justify-content: space-evenly;
+}
+
+input[type="checkbox"] {
+  width: 2em;
+  height: 2rem;
+  accent-color: #e09e50;
+}
+input[type="checkbox"]:hover {
+  color: black;
+  cursor: pointer;
+}
+
+#topRated {
+  margin-left: 2rem;
+}
+
+.button-search {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: #eee;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 1rem;
+  cursor: pointer;
+}
+.button-search:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.button-search:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+select option {
+  background-color: black;
+  opacity: 0.5;
+  color: white;
+}
+
+@media screen and (min-width: 800px) {
+  .threeSection {
+    display: flex;
+  }
+
+  .card {
+    margin: 30px 20px 0px 20px;
+  }
+
+  .genre {
+    height: 5vw;
+  }
+
+  .rated {
+    height: 4vw;
+  }
+
+  select {
+    font-size: 0.9rem;
+    width: 15vw;
+    border-style: none;
+  }
+}
+
+.light-theme .card {
+  background-color: white;
+}
+
+.light-theme .genreInput {
+  border: solid #e09e50;
+}
+
+.light-theme .selectType {
+  border: solid #e09e50;
+}

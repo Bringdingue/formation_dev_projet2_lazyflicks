@@ -1,0 +1,11 @@
+.logoContainer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.headerLogo {
+  max-height: 100px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
